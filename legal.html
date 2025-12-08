@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVINE | Legal: Privacy & Terms</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icon/icon.png">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="icon/icon.png" alt="DEVINE Icon" width="40" height="40">
+                <h1>DEVINE</h1>
+            </div>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="commands.html">Commands</a>
+                <a href="premium.html">Premium</a>
+                <a href="community.html">Community</a>
+                <a href="developers.html">Developers</a>
+                <a href="vote.html">Vote</a>
+                <a href="https://discord.gg/5YsStsgmXA" target="_blank" class="nav-discord">Discord</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle dark and light theme">☀️</button>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav hidden">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="commands.html">Commands</a>
+        <a href="premium.html">Premium</a>
+        <a href="community.html">Community</a>
+        <a href="developers.html">Developers</a>
+        <a href="vote.html">Vote</a>
+        <a href="https://discord.gg/5YsStsgmXA" target="_blank">Discord</a>
+        <a href="legal.html">Legal</a>
+    </nav>
+
+    <main class="legal-content">
+        <section class="page-hero legal-hero">
+            <div class="container">
+                <h2>Legal Documentation</h2>
+                <p>Transparency is important. Please review our policies regarding your data and service usage.</p>
+                <div class="legal-nav-links">
+                    <a href="#privacy" class="btn cta-secondary">Privacy Policy</a>
+                    <a href="#terms" class="btn cta-secondary">Terms of Service</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container legal-sections-wrapper">
+
+            <section id="privacy" class="legal-section">
+                <h3 class="legal-heading"><i class="fas fa-user-lock"></i> Privacy Policy</h3>
+                <p><em>Last Updated: November 25, 2025</em></p>
+                
+                <h4>1. Data Collection</h4>
+                <p>DEVINE collects the following minimal data necessary for functionality:</p>
+                <ul>
+                    <li>**Server IDs:** To link server-specific configurations, such as custom prefixes and ignored channels.</li>
+                    <li>**User IDs:** To identify users for premium status, playlist ownership, and administrator commands (e.g., ignoring).</li>
+                    <li>**Voice Channel IDs:** Stored temporarily while the bot is connected to ensure continuous music service (24/7 feature).</li>
+                </ul>
+
+                <h4>2. Data Storage</h4>
+                <p>All collected data is stored securely in an encrypted database. Data is retained for as long as the bot is active in a guild. If DEVINE is removed from a guild, all associated guild data (config, queues) is deleted within 7 days.</p>
+                
+                <h4>3. Playlist Data</h4>
+                <p>Playlist data stores video URLs, not actual audio files. This data is linked to the **User ID** that created the playlist. Upon request, a user may ask for all their playlist data to be deleted.</p>
+
+                <h4>4. Data Sharing</h4>
+                <p>We do not sell or share any user or guild data with third parties, outside of necessary Discord API calls for core functionality.</p>
+            </section>
+            
+            <hr class="legal-divider">
+
+            <section id="terms" class="legal-section">
+                <h3 class="legal-heading"><i class="fas fa-gavel"></i> Terms of Service</h3>
+                <p><em>Last Updated: November 25, 2025</em></p>
+
+                <h4>1. Acceptance of Terms</h4>
+                <p>By inviting DEVINE to your Discord server or using any of its features, you agree to these Terms of Service. If you do not agree, you must remove the bot from all guilds.</p>
+
+                <h4>2. Prohibited Uses</h4>
+                <p>You agree not to use DEVINE to play illegal, copyrighted (in violation of fair use/DMCA), or hateful content. The bot is provided "as is," and the developers are not responsible for user misuse.</p>
+
+                <h4>3. Uptime and Service</h4>
+                <p>While we strive for **99.99% uptime**, the service may be unavailable due to maintenance, updates, or Discord API outages. We reserve the right to modify or terminate the service at any time without prior notice.</p>
+                
+                <h4>4. Premium Subscriptions</h4>
+                <p>Premium features are licensed to the user for the paid duration. Refunds are granted only at the sole discretion of the DEVINE developers. Abuse of premium features may result in permanent revocation of the subscription.</p>
+
+                <h4>5. Changes to Terms</h4>
+                <p>We reserve the right to update these terms at any time. Continued use of DEVINE following any changes constitutes your acceptance of the new terms.</p>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="icon/icon.png" alt="DEVINE Icon" width="30" height="30">
+                        <span>DEVINE</span>
+                    </div>
+                    <p>&copy; 2025 DEVINE. All rights reserved.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="link-col">
+                        <h4>Community</h4>
+                        <a href="https://discord.gg/5YsStsgmXA" target="_blank">Support Discord</a>
+                        <a href="vote.html">Vote for DEVINE</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Legal</h4>
+                        <a href="legal.html#privacy">Privacy Policy</a>
+                        <a href="legal.html#terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

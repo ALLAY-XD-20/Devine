@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVINE | Developers & API</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icon/icon.png">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="icon/icon.png" alt="DEVINE Icon" width="40" height="40">
+                <h1>DEVINE</h1>
+            </div>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="commands.html">Commands</a>
+                <a href="premium.html">Premium</a>
+                <a href="community.html">Community</a>
+                <a href="developers.html" class="active">Developers</a>
+                <a href="vote.html">Vote</a>
+                <a href="https://discord.gg/5YsStsgmXA" target="_blank" class="nav-discord">Discord</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle dark and light theme">☀️</button>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav hidden">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="commands.html">Commands</a>
+        <a href="premium.html">Premium</a>
+        <a href="community.html">Community</a>
+        <a href="developers.html" class="active">Developers</a>
+        <a href="vote.html">Vote</a>
+        <a href="https://discord.gg/5YsStsgmXA" target="_blank">Discord</a>
+        <a href="legal.html">Legal</a>
+    </nav>
+
+    <main>
+        <section class="page-hero dev-hero">
+            <div class="container">
+                <h2>DEVINE Developer Resources</h2>
+                <p>Integrate DEVINE's features into your services, monitor our status, and contribute to our growth.</p>
+            </div>
+        </section>
+
+        <section class="dev-resources">
+            <div class="container dev-grid">
+
+                <div class="dev-card">
+                    <i class="fas fa-book dev-icon"></i>
+                    <h3>API Documentation</h3>
+                    <p>Access our public API documentation to retrieve bot statistics, status, and command list data for your own projects.</p>
+                    <a href="#" class="btn cta-secondary resource-btn disabled" aria-disabled="true">
+                        Read API Docs (Coming Soon)
+                    </a>
+                </div>
+
+                <div class="dev-card">
+                    <i class="fab fa-github dev-icon"></i>
+                    <h3>GitHub Repository</h3>
+                    <p>Contribute to open-source tools, view public code snippets, and submit pull requests for community projects.</p>
+                    <a href="https://github.com/devine-bot" target="_blank" class="btn cta-primary resource-btn">
+                        Visit GitHub <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="dev-card">
+                    <i class="fas fa-heartbeat dev-icon"></i>
+                    <h3>System Status Page</h3>
+                    <p>Monitor the real-time health, uptime, and node status of DEVINE's infrastructure and services.</p>
+                    <a href="#" target="_blank" class="btn cta-secondary resource-btn disabled" aria-disabled="true">
+                        View Status Page
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="api-guide-preview">
+            <div class="container">
+                <h2>API Endpoint Example</h2>
+                <p>A typical request to retrieve bot statistics returns a clean JSON object:</p>
+                <pre class="code-block"><code>GET /v1/bot/stats
+{
+  "status": 200,
+  "data": {
+    "servers": 150,
+    "users": 50000,
+    "songs_played": 10000,
+    "uptime_percent": 99.99
+  }
+}</code></pre>
+                <p class="mt-3">Ready to integrate? <a href="https://discord.gg/5YsStsgmXA" target="_blank" class="accent-link">Join our Discord</a> and ask about API keys!</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="icon/icon.png" alt="DEVINE Icon" width="30" height="30">
+                        <span>DEVINE</span>
+                    </div>
+                    <p>&copy; 2025 DEVINE. All rights reserved.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="link-col">
+                        <h4>Community</h4>
+                        <a href="https://discord.gg/5YsStsgmXA" target="_blank">Support Discord</a>
+                        <a href="vote.html">Vote for DEVINE</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Legal</h4>
+                        <a href="legal.html#privacy">Privacy Policy</a>
+                        <a href="legal.html#terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

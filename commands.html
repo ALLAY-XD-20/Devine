@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVINE | Commands List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="icon/icon.png">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="icon/icon.png" alt="DEVINE Icon" width="40" height="40">
+                <h1>DEVINE</h1>
+            </div>
+            <nav class="desktop-nav">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="commands.html" class="active">Commands</a>
+                <a href="premium.html">Premium</a>
+                <a href="community.html">Community</a>
+                <a href="developers.html">Developers</a>
+                <a href="vote.html">Vote</a>
+                <a href="https://discord.gg/5YsStsgmXA" target="_blank" class="nav-discord">Discord</a>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle dark and light theme">☀️</button>
+            <button class="menu-toggle" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav hidden">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="commands.html" class="active">Commands</a>
+        <a href="premium.html">Premium</a>
+        <a href="community.html">Community</a>
+        <a href="developers.html">Developers</a>
+        <a href="vote.html">Vote</a>
+        <a href="https://discord.gg/5YsStsgmXA" target="_blank">Discord</a>
+        <a href="legal.html">Legal</a>
+    </nav>
+
+    <main>
+        <section class="page-hero command-hero">
+            <div class="container">
+                <h2>All DEVINE Commands</h2>
+                <p>DEVINE supports both **Slash Commands (`/`)** and the **Prefix Command (`-`)** for maximum ease of use across all categories!</p>
+                <div class="prefix-info">
+                    <p>Your current prefix is: <code>-</code></p>
+                    <p>Example Usage: <code>/play Song Name</code> or <code>-play Song Name</code></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="command-list-section">
+            <div class="container">
+                
+                <div class="command-category-block">
+                    <h3 class="command-category-title"><i class="fas fa-headphones-alt"></i> Music</h3>
+                    <p class="category-description">Core commands for playback, queue management, and audio control.</p>
+                    <div class="command-grid">
+                        <span class="command-pill">autoplay</span><span class="command-pill">clear</span><span class="command-pill">grab</span><span class="command-pill">join</span><span class="command-pill">leave</span><span class="command-pill">loop</span>
+                        <span class="command-pill">nowplaying</span><span class="command-pill">pause</span><span class="command-pill">play</span><span class="command-pill">previous</span><span class="command-pill">queue</span><span class="command-pill">rejoin</span>
+                        <span class="command-pill">remove</span><span class="command-pill">resume</span><span class="command-pill">search</span><span class="command-pill">seek</span><span class="command-pill">shuffle</span><span class="command-pill">similar</span>
+                        <span class="command-pill">skip</span><span class="command-pill">stop</span><span class="command-pill">volume</span>
+                    </div>
+                </div>
+
+                <div class="command-category-block">
+                    <h3 class="command-category-title"><i class="fas fa-filter"></i> Filter</h3>
+                    <p class="category-description">Commands to apply special audio effects and equalization.</p>
+                    <div class="command-grid">
+                        <span class="command-pill">equalizer</span><span class="command-pill">filter</span>
+                    </div>
+                </div>
+
+                <div class="command-category-block">
+                    <h3 class="command-category-title"><i class="fas fa-list-alt"></i> Playlist</h3>
+                    <p class="category-description">Tools for saving, loading, and managing your custom song lists.</p>
+                    <div class="command-grid">
+                        <span class="command-pill">pl-add</span><span class="command-pill">pl-create</span><span class="command-pill">pl-delete</span><span class="command-pill">pl-export</span><span class="command-pill">pl-import</span>
+                        <span class="command-pill">pl-info</span><span class="command-pill">pl-list</span><span class="command-pill">pl-load</span><span class="command-pill">pl-profile</span><span class="command-pill">pl-removetrack</span>
+                    </div>
+                </div>
+
+                <div class="command-category-block">
+                    <h3 class="command-category-title"><i class="fas fa-cogs"></i> Config</h3>
+                    <p class="category-description">Server-specific settings, premium access, and bot setup.</p>
+                    <div class="command-grid">
+                        <span class="command-pill">247</span><span class="command-pill">config</span><span class="command-pill">ignore</span><span class="command-pill">prefix</span><span class="command-pill">premium</span><span class="command-pill">profile</span>
+                    </div>
+                </div>
+
+                <div class="command-category-block">
+                    <h3 class="command-category-title"><i class="fas fa-laugh-squint"></i> Fun</h3>
+                    <p class="category-description">Simple interaction commands for community engagement.</p>
+                    <div class="command-grid">
+                        <span class="command-pill">adance</span><span class="command-pill">blush</span><span class="command-pill">bonk</span><span class="command-pill">catsay</span><span class="command-pill">cry</span><span class="command-pill">cuddle</span>
+                        <span class="command-pill">hug</span><span class="command-pill">kill</span><span class="command-pill">kiss</span><span class="command-pill">pat</span><span class="command-pill">punch</span><span class="command-pill">roast</span><span class="command-pill">wink</span>
+                    </div>
+                </div>
+
+                <div class="command-category-block">
+                    <h3 class="command-category-title"><i class="fas fa-info-circle"></i> Information</h3>
+                    <p class="category-description">Check bot status, get links, and view support channels.</p>
+                    <div class="command-grid">
+                        <span class="command-pill">help</span><span class="command-pill">invite</span><span class="command-pill">node</span><span class="command-pill">ping</span><span class="command-pill">report</span><span class="command-pill">stats</span><span class="command-pill">support</span><span class="command-pill">vote</span>
+                    </div>
+                </div>
+                
+                <div class="command-category-block">
+                    <h3 class="command-category-title"><i class="fas fa-balance-scale"></i> Legal</h3>
+                    <p class="category-description">Compliance and policy information (usually linked via the Discord API).</p>
+                    <div class="command-grid">
+                        <span class="command-pill">legal</span>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="cta-invite">
+            <div class="container">
+                <h2>Try the Commands Yourself!</h2>
+                <p>Invite DEVINE to your server and experience the power of crystal-clear music.</p>
+                <a href="https://discord.com/oauth2/authorize?client_id=1441814908223357100&permissions=8&response_type=code&redirect_uri=https%3A%2F%2Fdiscord.gg%2F5YsStsgmXA&integration_type=0&scope=bot+applications.commands+guilds.join" class="btn cta-primary" target="_blank">
+                    <i class="fas fa-plus"></i> Invite DEVINE Now
+                </a>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="icon/icon.png" alt="DEVINE Icon" width="30" height="30">
+                        <span>DEVINE</span>
+                    </div>
+                    <p>&copy; 2025 DEVINE. All rights reserved.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="link-col">
+                        <h4>Community</h4>
+                        <a href="https://discord.gg/5YsStsgmXA" target="_blank">Support Discord</a>
+                        <a href="vote.html">Vote for DEVINE</a>
+                    </div>
+                    <div class="link-col">
+                        <h4>Legal</h4>
+                        <a href="legal.html#privacy">Privacy Policy</a>
+                        <a href="legal.html#terms">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
